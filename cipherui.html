@@ -1,0 +1,24 @@
+<html ng-app="CipherUI">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller="cipherController">
+
+    <h2>Let the Ciphering Begin!</h2>
+
+    <p><textarea ng-model="message" cols="40" rows="10"></textarea></p>
+
+    <p>
+    <button ng_click="cipher()">Cipher It!</button>
+    <button ng-click="clear()">Clear</button>
+    </p>
+
+  </div>
+  <script>
+  function cipherController($scope) {
+
+  }
+  </script>
+</body>
+</html>
